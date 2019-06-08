@@ -1,2 +1,4 @@
-# clickstream-sentiment-analysis
-Sentiment Analysis of Clickstream Metrics
+# Sentiment Analysis of Clickstream Metrics
+CS221 Project Repo
+
+
