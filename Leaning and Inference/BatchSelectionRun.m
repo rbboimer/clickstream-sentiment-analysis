@@ -1,4 +1,4 @@
-function [dataPointsAdded] = batchSelectionRun(count, confidenceFilterPos, confidenceFilterNeg, Input1, Output1)
+function [dataPointsAdded] = BatchSelectionRun(count, confidenceFilterPos, confidenceFilterNeg, Input1, Output1)
 
 % Read the unlabeled data
 s = strcat('fnameUnLabelledBatches-',num2str(count), '.csv');
