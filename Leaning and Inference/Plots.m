@@ -1,9 +1,11 @@
+% Graphs for evaluation
 
 close all
 plot(errorRate)
 M = movmean(errorRate, 20);
 hold on
 plot(M)
+
 legend('Test Error Ratio','Moving Average')
 
 %title('Error Rate vs. Self Training Iteration [C = 0.9999]')
