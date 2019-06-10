@@ -41,5 +41,3 @@ with open(outputFile, "w") as f:
 
 s3 = boto3.resource('s3')
 s3.Bucket(bucketName).upload_file(outputFile, key)
-
-print "Done writing "
