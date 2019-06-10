@@ -16,4 +16,12 @@ This repo includes the code required to reproduce the results obtained in the ac
 * MetricAnalytics.ipynb - Jupyter notebook that takes care of the data preprocessing steps
 
 **Learning and Inference**
-* 
+* Oracle and Baseline
+  * OracleBaselineModels.ipynb - Jupyter notebook with the Oracle and Baseline model code
+  * OracleBaselineModels.html - HTML version of the notebook for ease of access, please open the HTML in a browswer
+* BatchSelectionRun.m - Runs the model on a batch of unlabeled data (for self-learning)
+* GenerateNN_Model.m - Generates a neural network function
+* GenerateNN_data.m - Loads the data from csv, encodes strings, orders features
+* main_Function.m - Defines the workflow for the self-learning methodology
+* Plots.m - Helper for plotting evaluation graphs
+* ReadUnlabeledBatchData.m - Helper for reading the unlabeled data .csv
