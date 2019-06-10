@@ -1,16 +1,14 @@
 function Generate_NN_Model(Input, Output)
-%   Input - input data.
-%   Output - target data.
+% Input - input data.
+% Output - target data.
 
 x = Input';
 t = Output';
-
 
 % Create a Pattern Recognition Network
 hiddenLayerSize = 32;
 trainFcn = 'trainlm';
 net = patternnet(hiddenLayerSize, trainFcn);
-
 
 % Choose Input and Output Pre/Post-Processing Functions
 net.input.processFcns = {'removeconstantrows','mapminmax'};
@@ -29,4 +27,4 @@ net.performFcn = 'crossentropy';  % Cross-Entropy
 [net,~] = train(net,x,t);
 
 % Generate function for neural network 
-genFunction(net,'myNeuralNetworkFunction');
+genFunction(net,'neuralNetworkFunction');
