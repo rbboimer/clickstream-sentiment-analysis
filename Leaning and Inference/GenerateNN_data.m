@@ -1,8 +1,8 @@
-%function to load the data from csv and then convert the features into
-%numbers rather than strings and charcaters. Finally allign the features in
-%the desired order
+% Function to load the data from csv and convert the features into
+% numbers rather than strings and charcaters. Finally align the features in
+% the desired order
 
-function [X1, X2, y1, y2] = generateNN_data(csv_name)
+function [X1, X2, y1, y2] = GenerateNN_data(csv_name)
 tableFeed =  readtable(csv_name);
 
 outputs = tableFeed.frustrated;
@@ -10,9 +10,9 @@ outputs = tableFeed.frustrated;
 Inputs1 = tableFeed.account_id;
 inputs2 = tableFeed.metric;
 inputs3 = tableFeed.session_id;
-Inputs4 = datenum(tableFeed.timestamp); %Convert into double
+Inputs4 = datenum(tableFeed.timestamp); % Convert into double
 
-%convert outputs into usuable data
+% Convert outputs into usuable data
 Output = zeros(1, length(outputs));
 for i=1:length(outputs)
     temp1 = outputs(i);
@@ -25,7 +25,7 @@ for i=1:length(outputs)
 end
 Output = Output';
 
-%convert inputs into usuable data
+% Convert inputs into usuable data
 Inputs2 = zeros(1, length(inputs2));
 for i=1:length(inputs2)
     Inputs2(i) = sum(double(char(inputs2(i))));
