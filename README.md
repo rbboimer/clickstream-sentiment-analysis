@@ -14,6 +14,7 @@ This repo includes the code required to reproduce the results obtained in the ac
 
 **Data Preprocessing**
 * MetricAnalytics.ipynb - Jupyter notebook that takes care of the data preprocessing steps
+* MetricAnalytics.html - HTML version of the notebook for ease of access, please open the HTML in a browser
 
 **Learning and Inference**
 * Oracle and Baseline
