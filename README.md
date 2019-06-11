@@ -10,7 +10,7 @@ This repo includes the code required to reproduce the results obtained in the ac
 * SampleLogging.js - Sample click handler code that logs an event to the data warehouse
 * QueryWarehouse.py - Contains the code that queries the data warehouse for click metrics
 * DataExtraction.ipynb - Jupyter notebook that correlates labels from customer feedback with unlabeled click metrics
-* DataExtraction.html - HTML version of the notebook for ease of access, please open the HTML in a browswer
+* DataExtraction.html - HTML version of the notebook for ease of access, please open the HTML in a browser
 
 **Data Preprocessing**
 * MetricAnalytics.ipynb - Jupyter notebook that takes care of the data preprocessing steps
@@ -18,7 +18,7 @@ This repo includes the code required to reproduce the results obtained in the ac
 **Learning and Inference**
 * Oracle and Baseline
   * OracleBaselineModels.ipynb - Jupyter notebook with the Oracle and Baseline model code
-  * OracleBaselineModels.html - HTML version of the notebook for ease of access, please open the HTML in a browswer
+  * OracleBaselineModels.html - HTML version of the notebook for ease of access, please open the HTML in a browser
 * BatchSelectionRun.m - Runs the model on a batch of unlabeled data (for self-learning)
 * GenerateNN_Model.m - Generates a neural network function
 * GenerateNN_data.m - Loads the data from csv, encodes strings, orders features
